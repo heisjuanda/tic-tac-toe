@@ -1,0 +1,276 @@
+.one {
+  grid-area: uno;
+}
+
+.two {
+  grid-area: dos;
+}
+
+.three {
+  grid-area: tres;
+}
+
+.four {
+  grid-area: cuatro;
+}
+
+.five {
+  grid-area: cinco;
+}
+
+.six {
+  grid-area: seis;
+}
+
+.seven {
+  grid-area: siete;
+}
+
+.eight {
+  grid-area: ocho;
+}
+
+.nine {
+  grid-area: nueve;
+}
+
+.table1 {
+
+  align-items: center;
+  justify-content: center;
+  margin: 5%;
+
+  div {
+    width: 30vw;
+    height: 33vw;
+    border: 5px solid white;
+    margin: 0%;
+    padding: 1.2%;
+
+    button {
+      margin: 1%;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      border: 2px solid blue;
+      border: none;
+
+      p {
+        color: white;
+        font-size: 11vw;
+        font-family: 'Silkscreen', cursive;
+      }
+    }
+  }
+
+  .one,
+  .three,
+  .seven,
+  .nine {
+    border: none;
+  }
+
+  .two,
+  .eight {
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .four,
+  .six {
+    border-left: none;
+    border-right: none;
+  }
+
+  display: grid;
+  grid-template-areas: 'uno dos tres'
+  'cuatro cinco seis'
+  'siete ocho nueve'
+  ;
+  width: 90vw;
+  height: 100vw;
+}
+
+.p1 {
+  grid-area: p1;
+}
+
+.p2 {
+  grid-area: p2;
+}
+
+.draw {
+  grid-area: draw;
+}
+
+.score1 {
+  grid-area: score1;
+}
+
+.score2 {
+  grid-area: score2;
+}
+
+.score0 {
+  grid-area: score0;
+}
+
+.table2 {
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  div {
+    p {
+      color: white;
+      font-family: 'Itim', cursive;
+    }
+  }
+
+  display: grid;
+  grid-template-areas: 'p1 draw p2'
+  'score1 score0 score2'
+  ;
+
+  gap: 5%;
+
+  width: 100%;
+  height: 50%;
+}
+
+.reset {
+  button {
+    background-color: transparent;
+    color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 5vw;
+    margin-left: 45vw;
+    width: 12vw;
+    height: 10vw;
+    p {
+      color: white;
+      font-size: 3vw;
+      font-family: 'Itim', cursive;
+    }
+    transition: 0.5s;
+  }
+  button:active {
+    //margin-left: 44vw;
+    transform: rotate3d(0, 1, 0,50deg);
+  }
+}
+
+@media  screen and (min-width: 435px) {
+
+
+  .table1 {
+
+    align-items: center;
+    justify-content: center;
+    margin-left: 44vw;
+    margin-top: 1%;
+
+    div {
+      width: 10vw;
+      height: 10vw;
+      border: 6px solid white;
+      margin: 0%;
+      padding: 1%;
+
+      button {
+        margin: 1%;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+
+        p {
+          color: white;
+          font-size: 3.5vw;
+          font-family: 'Silkscreen', cursive;
+        }
+      }
+    }
+
+    .one,
+    .three,
+    .seven,
+    .nine {
+      border: none;
+    }
+
+    .two,
+    .eight {
+      border-top: none;
+      border-bottom: none;
+    }
+
+    .four,
+    .six {
+      border-left: none;
+      border-right: none;
+    }
+
+    display: grid;
+    grid-template-areas: 'uno dos tres'
+    'cuatro cinco seis'
+    'siete ocho nueve'
+    ;
+    width: 10vw;
+    height: 20vw;
+  }
+
+
+  .table2 {
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5vw;
+
+    div {
+      p {
+        color: white;
+        font-size: 1.5vw;
+        font-family: 'Itim', cursive;
+      }
+    }
+
+    display: grid;
+    grid-template-areas: 'p1 draw p2'
+    'score1 score0 score2'
+    ;
+
+    gap: 5%;
+
+    width: 100%;
+    height: 50%;
+  }
+
+
+  .reset {
+    button {
+      background-color: transparent;
+      color: black;
+      border: 1px solid white;
+      border-radius: 5px;
+      margin-top: 1vw;
+      margin-left: 47.4vw;
+      width: 4vw;
+      height: 3vw;
+      p {
+        color: white;
+        font-size: 1vw;
+        font-family: 'Itim', cursive;
+      }
+      transition: 0.5s;
+    }
+    button:active {
+      //margin-left: 44vw;
+      transform: rotate3d(0, 1, 0,50deg);
+    }
+  }
+
+}
