@@ -1,8 +1,10 @@
+#Project
+
+See project [here](https://tic-tac-toe-angularproject.netlify.app/)
+
 # TicTacToe
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
-
-See project [here](https://tic-tac-toe-angularproject.netlify.app/)
 
 ## Development server
 
